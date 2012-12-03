@@ -1,6 +1,7 @@
-## GreenSock TimelineMax Tween
+# Playing with the GreenSock Animation Platform
 
-Playing around with [GreenSock's Tweening Platform][1]
+## GreenSock TimelineMax Tween Example
+[GreenSock's GSAP][1] is an animation platform for JavaScript. A suite of tools for scripted animation. If you've ever played around with GreenSock's ActionScript Tween Platform this will be very familiar.
 
 See the animation on this [page][2].
 

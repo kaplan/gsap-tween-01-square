@@ -1,64 +1,51 @@
 <!doctype html>
 <html lang="en">
-	
-	<head>
-		
-		<title>HTML5 Example</title>
 
-		<script src="js/libs/TweenMax.min.js"></script>
-  	<script src="js/script.js"></script>	
+<head>
 
-<!--		<script>
+<title>HTML5 Example</title>
 
-			function init() {
-			  console.log("INIT");
-				var b = document.getElementById("box");
-				b.style.left = (window.innerWidth * 0.5 - 100) + "px";
-				b.style.top = (window.innerHeight * 0.5 - 100) + "px";
-			}
+<script src="js/libs/TweenMax.min.js"></script>
+<script src="js/script.js"></script>	
 
-		</script>-->
+<style type="text/css">
+body {
+background-color: #3b3b3b;
+}
 
-		<style type="text/css">
-		  body {
-		    background-color: #3b3b3b;
-		  }
+#box {
+display: none;
+width: 200px;
+height: 200px;
+background-color: #ff6600;
+position: absolute;
+}
 
-			#box {
-			  display: none;
-				width: 200px;
-				height: 200px;
-				background-color: #ff6600;
-				position: absolute;
-			}
-			
-			#square {
-			  display: none;
-			  width: 100px;
-			  height: 100px;
-			  background-color: #efefef;
-			  position: absolute;
-			  font: bold .8em/1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-			  text-align: center;
-			}
-			#square span {
-			  margin-top: 40px;
-			  display: block;
-/*			  background-color: #333;*/
-/*			  color: #fff;*/
-			}
+#square {
+display: none;
+width: 100px;
+height: 100px;
+background-color: #efefef;
+position: absolute;
+font: bold .8em/1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+text-align: center;
+}
+#square span {
+margin-top: 40px;
+display: block;
+}
 
-		</style>
+</style>
 
-	</head>
+</head>
 
-	<body onload="init()">
-		
-		<div id="box"></div>
-		
-		<div id="square"><span>square</span></div>
-		
-		
-	</body>
+<body onload="init()">
+
+<div id="box"></div>
+
+<div id="square"><span>square</span></div>
+
+
+</body>
 
 </html>
