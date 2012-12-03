@@ -8,4 +8,4 @@ Sometimes gratuitous animation play can teach.
 See the animation on this [page][2].
 
 [1]: http://www.greensock.com/gsap-js/ "GreenSock Animation Platform"
-[2]: http://www.workalicious.com/dev/gs-tween-timeline-square/ "GreenSock Square Animation"
+[2]: http://www.workalicious.com/dev/gsap-tween-01-square/ "GreenSock Square Animation"
