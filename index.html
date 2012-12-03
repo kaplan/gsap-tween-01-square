@@ -1,51 +1,54 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>GSAP Example 01</title>
 
-<head>
+    <style type="text/css">
+      body {
+        background-color: #3b3b3b;
+        font: bold .8em/1.2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+      }
+      #box {
+        background-color: #ff6600;
+        color: #efefef;
+        display: none;
+        height: 200px;
+        position: absolute;
+        width: 200px;
+      }
+      #square {
+        background-color: #efefef;
+        display: none;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+      }
+      #square span {
+        display: block;
+        margin-top: 35px;
+      }
+    </style>
+  </head>
 
-<title>HTML5 Example</title>
+  <body>
+    <div id="box">
+      <span>BOX</span>
+    </div>
+    <div id="square">
+      <span>Do Stuff onStart</span>
+    </div>
 
-<script src="js/libs/TweenMax.min.js"></script>
-<script src="js/script.js"></script>	
-
-<style type="text/css">
-body {
-background-color: #3b3b3b;
-}
-
-#box {
-display: none;
-width: 200px;
-height: 200px;
-background-color: #ff6600;
-position: absolute;
-}
-
-#square {
-display: none;
-width: 100px;
-height: 100px;
-background-color: #efefef;
-position: absolute;
-font: bold .8em/1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-text-align: center;
-}
-#square span {
-margin-top: 40px;
-display: block;
-}
-
-</style>
-
-</head>
-
-<body onload="init()">
-
-<div id="box"></div>
-
-<div id="square"><span>square</span></div>
+    <script src="js/libs/TweenMax.min.js"></script>
+    <script src="js/script.js"></script>  
+    <script>
+    addLoadEvent(function() {
+      initAnimation();
+    })
+    </script>
 
 
-</body>
+  </body>
+
 
 </html>

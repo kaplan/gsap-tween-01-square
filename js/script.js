@@ -1,15 +1,31 @@
-function init() {
-  console.log("INIT");
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function initAnimation() {
+  console.log("Start Animation");
     
   // objects
 	var box = document.getElementById("box");
 	var sq = document.getElementById("square");
 	var txt = sq.getElementsByTagName("span");
-	var txtEl = txt[0];
+	var txtEl = txt[0];	
+	var squareTxt = txt[0].firstChild.nodeValue;
+	var revSquareTextElem = squareTxt.split("").reverse().join("");
 	
 	console.log("----> " + txt.length);
 	console.log("----> " + txt[0].firstChild.nodeValue);
-	txt[0].firstChild.nodeValue = "erauqs";
+	console.log("----> " + squareTxt);
+	console.log("----> " + revSquareTextElem);
+	txt[0].firstChild.nodeValue = revSquareTextElem;
 	
 	// centered box
 	var xc = window.innerWidth * 0.5 - 100;
@@ -38,20 +54,19 @@ function init() {
     //TweenMax.from(square, 1, {css:{top:-100}, ease:Elastic.easeOut});
     TweenMax.from(sq, 1, {css:{top:-100}, ease:Elastic.easeOut});
     TweenMax.to(sq, 1, {css:{backgroundColor:"#ff6600"}, ease:Quad.easeOut, delay:1});
-//    TweenMax.to(txtEl, 1, {css:{marginTop:-20, color:"#fff"}, ease:Elastic.easeOut, delay:.25});
     tl.play();
     
 	}
 	
 	tl = new TimelineMax({paused:true});
-	tl.to(txtEl, 2, {css:{marginTop:-20, color:"#fff"}, ease:Elastic.easeInOut});
+	tl.to(txtEl, 2, {css:{marginTop:-40, color:"#fff"}, ease:Elastic.easeInOut});
 	tl.to(txtEl, 1, {css:{color:"#ff6600"}, ease:Quad.easeOut});
 	tl.to(sq, .25, {onStart:revSquareText, css:{rotation:360}, ease:Quad.easeOut}, -1);
 	//tl.call(revSquareText);
 	//	tl.play();
 	
 	function revSquareText() {
-	  txt[0].firstChild.nodeValue = "square";
+	  txt[0].firstChild.nodeValue = squareTxt;
 	}
 
 }
