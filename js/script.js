@@ -58,7 +58,8 @@ function initAnimation() {
 		TweenMax.from(sq, 1, {css:{top:-100}, ease:Elastic.easeOut});
 		TweenMax.to(sq, 1, {css:{backgroundColor:"#ff6600"}, ease:Quad.easeOut, delay:1});
 		tl.play();
-}
+	}
+	
 	// when the tl:TimelineMax runs, display the string in reverse.
 	function revSquareText() {
 		txt[0].firstChild.nodeValue = squareTxt;
