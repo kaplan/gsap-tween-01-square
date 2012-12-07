@@ -1,2 +1,4 @@
 *.DS_Store
 /js/libs
+.sass-cache
+config.rb
