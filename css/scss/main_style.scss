@@ -1,0 +1,27 @@
+@import '_base';
+
+body {
+	color: $workDarkColor;
+	background-color: $workDarkColor;
+	font: bold .8em/1.2 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#box {
+	background-color: $workBrightColor;
+	color: $workLightColor;
+	display: none;
+	height: 200px;
+	position: absolute;
+	width: 200px;
+}
+#square {
+	background-color: $workLightColor;
+	display: none;
+	height: 100px;
+	position: absolute;
+	text-align: center;
+	width: 100px;
+}
+#square span {
+	display: block;
+	margin-top: 35px;
+}
